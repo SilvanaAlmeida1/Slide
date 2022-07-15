@@ -1,0 +1,66 @@
+{% extends './base.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Slider</title>
+    <link href="https://fonts.googleapis.com/css?family=Roboto:300&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+    <div class="contenedor">
+        <div class="slider-contenedor">
+            <section class="contenido-slider">
+                <div>
+                    <h2>Não sabe as rotas do seu ônibus? Acompanhe a trajetoria do seu ônibus em nosso site. Sempre
+                        saiba onde seu ônibus passará para que você possa estar preparado.</h2>
+                    <a href="{% url 'todo_list' %}">ROTAS</a>
+                </div>
+                <img src="animacion.svg" alt="">
+
+            </section>
+            <section class="contenido-slider">
+                <div>
+                    <h2>Com um clique, você pode vizualizar os turnos da sua viagem em nosso site. Isso economizará
+                        tempo e
+                        aborrecimentos no ônibus para que você possa aproveitar seu passeio.</h2>
+                    <a href="{% url 'index' %}">TURNOS</a>
+                </div>
+                <img src="animacion2.svg" alt="">
+
+            </section>
+            <section class="contenido-slider">
+                <div>
+                    <h2>Apartir do nosso sistema e possivel vizualizar avisos dos onibus, informado sobre algo de
+                        importante como rodagem em sabados letivos, comprovantes, objetos perdidos, trocas de onibus em
+                        rodagem e etc.</h2>
+                    <a href="{% url 'blog-home' %}">AVISOS</a>
+                </div>
+                <img src="animacion3.svg" alt="">
+
+            </section>
+            <section class="contenido-slider">
+                <div>
+                    <h2>Não sabe as rotas do seu ônibus? Acompanhe a trajetoria do seu ônibus em nosso site. Sempre
+                        saiba onde seu ônibus passará para que você possa estar preparado.</h2>
+                    <a href="{% url 'todo_list' %}">ROTAS</a>
+                </div>
+                <img src="animacion.svg" alt="">
+
+            </section>
+        </div>
+    </div>
+    <script src="main.js"></script>
+</body>
+
+</html>
+
+{% endblock content %}
